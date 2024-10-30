@@ -1,4 +1,6 @@
+import PropTypes from "prop-types";
 import Cousin from "../Cousin/Cousin";
+
 
 const Uncle = ({asset}) => {
     return (
@@ -11,5 +13,9 @@ const Uncle = ({asset}) => {
         </div>
     );
 };
+
+Uncle.propTypes = {
+    asset: PropTypes.string
+}
 
 export default Uncle;
