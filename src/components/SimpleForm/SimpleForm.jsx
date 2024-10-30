@@ -1,5 +1,3 @@
-
-
 const SimpleForm = () => {
     const handleSubmit = e => {
         e.preventDefault();

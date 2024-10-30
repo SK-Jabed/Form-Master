@@ -1,6 +1,7 @@
 import './App.css'
-import SimpleForm from './components/SimpleForm/SimpleForm'
-import StateFulForm from './components/StateFulForm/StateFulForm'
+import ReferenceForm from './components/ReferenceForm/referenceform'
+// import SimpleForm from './components/SimpleForm/SimpleForm'
+// import StateFulForm from './components/StateFulForm/StateFulForm'
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
       
       <h2>Form Master with React Router</h2>
       {/* <SimpleForm></SimpleForm> */}
-      <StateFulForm></StateFulForm>
+      {/* <StateFulForm></StateFulForm> */}
+      <ReferenceForm></ReferenceForm>
      
     </>
   )
