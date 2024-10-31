@@ -1,24 +1,31 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import Aunty from "../Aunty/Aunty";
 import Dad from "../Dad/Dad";
 import Uncle from "../Uncle/Uncle";
 import "./Grandpa.css"
 
-const AssetContext = createContext("Gold");
+// eslint-disable-next-line react-refresh/only-export-components
+export const AssetContext = createContext("Gold");
+// eslint-disable-next-line react-refresh/only-export-components
+export const MoneyContext = createContext(1000);
 
 const Grandpa = () => {
     const asset = "Diamond Ring";
+    const [money, setMoney] = useState(1000);
 
     return (
         <div className="grandpa">
             <h2>Grandpa</h2>
-            <AssetContext.Provider value="gold">
-                <section className="flex">
-                    <Uncle asset={asset}></Uncle>
-                    <Dad asset={asset}></Dad>
-                    <Aunty></Aunty>
-                </section> 
-            </AssetContext.Provider>           
+            <p>Net Money: {money}</p>
+            <MoneyContext.Provider value={[money, setMoney]}>
+                <AssetContext.Provider value="gold">
+                    <section className="flex">
+                        <Uncle asset={asset}></Uncle>
+                        <Dad asset={asset}></Dad>
+                        <Aunty></Aunty>
+                    </section> 
+                </AssetContext.Provider>           
+            </MoneyContext.Provider>
         </div>
     );
 };
