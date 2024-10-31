@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Special from "../Special/Special";
 
+
 const Myself = ({asset}) => {
     return (
         <div>

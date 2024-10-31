@@ -1,5 +1,7 @@
+import PropTypes from "prop-types";
 import { useContext } from "react";
 import { AssetContext } from "../Grandpa/Grandpa";
+
 
 const Special = ({asset}) => {
     const gift = useContext(AssetContext);
@@ -12,5 +14,9 @@ const Special = ({asset}) => {
         </div>
     );
 };
+
+Special.propTypes = {
+    asset: PropTypes.string
+}
 
 export default Special;

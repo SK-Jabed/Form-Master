@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-const ReusableForm = ({formTitle, handleSubmit, submitBtnText = "Submit", children}) => {
 
+const ReusableForm = ({formTitle, handleSubmit, submitBtnText = "Submit", children}) => {
     const handleLocalSubmit = e => {
         e.preventDefault();
         const data = {

@@ -6,8 +6,8 @@ import Grandpa from './components/Grandpa/Grandpa'
 // import SimpleForm from './components/SimpleForm/SimpleForm'
 // import StateFulForm from './components/StateFulForm/StateFulForm'
 
-function App() {
 
+function App() {
   // const handleSignUpSubmit = data => {
   //     console.log("Sign up data", data);
   // }
@@ -47,5 +47,6 @@ function App() {
     </>
   )
 }
+
 
 export default App

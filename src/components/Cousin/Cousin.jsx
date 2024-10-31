@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import Special from "../Special/Special";
 import Friend from "../Friend/Friend";
 
+
 const Cousin = ({name, asset}) => {
     return (
         <div>
@@ -16,7 +17,8 @@ const Cousin = ({name, asset}) => {
 };
 
 Cousin.propTypes = {
-    name: PropTypes.string
+    name: PropTypes.string,
+    asset: PropTypes.string
 }
 
 export default Cousin;

@@ -1,6 +1,8 @@
+import PropTypes from "prop-types";
 import Brother from "../Brother/Brother";
 import Myself from "../Myself/Myself";
 import Sister from "../Sister/Sister";
+
 
 const Dad = ({asset}) => {
     return (
@@ -14,5 +16,9 @@ const Dad = ({asset}) => {
         </div>
     );
 };
+
+Dad.propTypes = {
+    asset: PropTypes.string
+}
 
 export default Dad;

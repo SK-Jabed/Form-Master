@@ -8,7 +8,7 @@
  * 
  * 4. Uncontrolled element: useRef to create a reference to the element and access value by using like: nameRef.current.value
  * 
- * 5. Use hook to handle states, submit and error. Example: react hook form
+ * 5. Use hook to handle states, submit and error. Example: React Hook Form
  * 
  * 6. Reusable component. 
 */
